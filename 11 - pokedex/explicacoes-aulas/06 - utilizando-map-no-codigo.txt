@@ -1,0 +1,14 @@
+O uso do metodo de listas MAP diminui a verbosidade do nosso código
+O map ele retorna uma nova lista
+
+const pokemonListHtml = document.querySelector('#pokemonList')
+  pokeApi.getPokemons().then((pokemons = []) => {
+    
+    const newItem = pokemons.map((pokemon) => {
+      return convertPokemonToHtml(pokemon)
+    })
+    
+    const newHtml = newItem.join('')
+
+    pokemonListHtml.innerHTML += newHtml
+  })

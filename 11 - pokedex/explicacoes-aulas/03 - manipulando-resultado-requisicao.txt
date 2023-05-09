@@ -1,0 +1,7 @@
+Por si só o fetch retorna uma string
+Para trabalhar com os dados devemos converter o Body em json
+
+fetch(url)
+  .then((response) => response.json())
+  .then((jsonBody) => console.log(jsonBody))
+  .catch((error) => console.log(error))

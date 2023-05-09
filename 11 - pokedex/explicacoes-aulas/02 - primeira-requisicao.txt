@@ -1,0 +1,7 @@
+Fazendo requisição com JS com fetch()
+
+fetch retorna uma promisse que é uma promessa de um resultado que pode demorar um tempo
+
+fetch(url).then((response)=>{
+  console.log(response)
+})

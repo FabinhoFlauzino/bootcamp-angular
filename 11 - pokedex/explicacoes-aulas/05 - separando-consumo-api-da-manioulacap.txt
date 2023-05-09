@@ -1,0 +1,2 @@
+Separar o código é importante pois divide a responsabilidade
+Assim melhora a manutenção do código futuramente

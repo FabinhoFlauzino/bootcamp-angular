@@ -1,0 +1,59 @@
+Requisição HTTP
+
+Contém algumas partes Endereço e o caminho onde está o recurso
+URL = https://pokeapi.co/api/v2/pokemon
+Endereço = https://pokeapi.co
+Caminho ou path = /api/v2/pokemon
+
+Existem alguns metodos para usar os protocolos
+Request Methods: GET | POST | PUT | DELETE
+GET =  Pegar dados 
+POST = criar dadosPUT = alterar dados
+DELETE = excluir dados
+
+PATH PARAMS E QUERY STRING
+Os parâmetros de caminho são usados ​​para identificar um recurso específico, 
+enquanto os parâmetros de consulta são usados ​​para filtrar e classificar os dados.
+
+PATH PARAMS 
+são usados ​​para identificar um recurso específico em uma API. 
+Eles são normalmente usados ​​ao recuperar um único recurso, como um perfil de usuário ou um produto específico. 
+Os parâmetros de caminho geralmente são incluídos no URL e geralmente são a primeira parte do URL após o nome do domínio. 
+Por exemplo, se você deseja recuperar um perfil de usuário, a URL pode ter esta aparência: https://example.com/users/12345. 
+Neste exemplo, o parâmetro de caminho é “12345”, que é usado para identificar o perfil de usuário específico.
+
+QUERY STRING
+são usados ​​para filtrar e classificar os dados retornados de uma API. 
+Eles são normalmente usados ​​ao recuperar vários recursos, como uma lista de produtos ou uma lista de usuários. O
+s parâmetros de consulta geralmente são incluídos no URL e geralmente são a última parte do URL. 
+Por exemplo, se você quiser recuperar uma lista de produtos, a URL pode ter esta aparência: https://example.com/products?categoria=eletrônicos&sort=preço. 
+Neste exemplo, os parâmetros de consulta são “category=electronics” e “sort=price”, que são usados ​​para filtrar e ordenar a lista de produtos.
+
+exemplo de PATH PARAMS
+usando para recuperar por identificador único
+https://pokeapi.co/api/v2/pokemon/1
+
+exemplo de QUERY STRING
+Query strings são usados para filtrar recursos são iniciados com ? e seguidos de chave e valor
+podendo passar mais de um parametro
+
+https://pokeapi.co/api/v2/pokemon?offset=20&limit=20
+
+HEADERS
+HEADERS são configurações para a requisição, que podemos enviar
+
+Response é a resposta do servidor
+
+Request é o que queremos aceitar
+configuração
+linguagem
+autenticação
+
+BODY e STATUS CODE
+BODY é o corpo da requisição, é o dado que eu quero trafegar dependendo do tipo da requisição
+GET não precisa de BODY
+POST e PUT precisa de requisição
+
+STATUS CODE é o que retorna oque aconteceu com a requisição
+
+
