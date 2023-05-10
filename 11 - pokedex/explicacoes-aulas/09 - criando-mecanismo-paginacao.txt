@@ -1,3 +1,8 @@
+Criando mecanismo de paginaçã
+
+Primeiro devemos analisar de quem é a responsabilidade de carregar o conteudo
+depois disso iremos usar o query String que tem os parametros offset e limit para delimitar o total de conteudo e a pagina
+
 const pokemonListHtml = document.querySelector('#pokemonList')
 const btn = document.querySelector('#loadMoreButton')
 const limit = 5
