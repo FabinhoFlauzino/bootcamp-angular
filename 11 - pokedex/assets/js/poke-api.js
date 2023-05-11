@@ -8,15 +8,9 @@ function convertPokeApiToPokemon(pokeDetail){
   const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
   const [type] = types
 
-  const stats = pokeDetail.stats.map((stat) => stat)
-
   pokemon.types = types
   pokemon.type = type
-  pokemon.stats = stats
-  pokemon.hp = stats[0]
-  pokemon.attack = stats[1]
-  pokemon.defense = stats[2]
-  pokemon.speed = stats[5]
+  pokemon.stats = pokeDetail.stats.map((stat) => stat)
 
   pokemon.photo = pokeDetail.sprites.versions['generation-v']['black-white'].animated.front_default
 

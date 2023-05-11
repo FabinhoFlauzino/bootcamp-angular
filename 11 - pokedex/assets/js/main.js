@@ -1,7 +1,7 @@
 const pokemonListHtml = document.querySelector('#pokemonList')
 const pokemonHtml = document.querySelector('#pokemon')
 const btn = document.querySelector('#loadMoreButton')
-const limit = 151
+const limit = 6
 let offset = 0
 
 
@@ -13,7 +13,7 @@ function loadPokemonItems(offset, limit) {
       return `
         <li>
           <a href="./pokemon.html?pokemon=${pokemon.number}" class="pokemon ${pokemon.type}">
-            <span class="number">#${pokemon.number}</span>
+            <span class="number">#${pokemon.number.toString().padStart(3, '0')}</span>
             <span class="name">${pokemon.name}</span>
             <div class="detail">
               <ol class="types">
@@ -76,9 +76,29 @@ if(window.location.search){
                 </div>
               </div>
             `
-            pokemonHtml.innerHTML = pokemonContent
-            console.log(pokemon)
+            if(pokemonHtml){
+              pokemonHtml.innerHTML = pokemonContent
+            }
           })
 } else {
-  console.log('nao');
+  const pokemonContent = `
+    <div class="card">
+      <div class="card-body">
+        <div class="image">
+          <img src="./assets/img/img.png" alt="Imagem">
+        </div>
+        <div class="name" data-name="Treinador">
+          <span>Treinador</span>
+        </div>
+        <div class="type">
+          <span>
+            <span class="type">Treinador</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  `
+  if(pokemonHtml){
+    pokemonHtml.innerHTML = pokemonContent
+  }
 }
