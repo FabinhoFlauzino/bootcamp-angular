@@ -1,0 +1,62 @@
+//variaveis
+
+//tipos primitivos: boolean, number, string
+let ligado: boolean = false;
+let nome: string = "Fabio";
+let idade: number = 38;
+let altura: number = 1.9;
+
+//tipos especiais: null e undefined
+let nulo: null = null;
+let indefinido: undefined = undefined;
+
+//tipos abrangentes: any e void
+function executaQuery():void{};
+let retorno: void;
+let retornoView: any = false;
+
+//objeto sem previsibilidade
+let produto: object = {
+  name: "Fabio",
+  cidade: "Marilia",
+  estado: "SP"
+};
+
+//objeto com previsibilidade
+type ProdutoLoja = {
+  nome: string;
+  preco: number;
+  unidade: number;
+};
+
+let meuProduto: ProdutoLoja = {
+  nome: "Tenis",
+  preco: 90.99,
+  unidade: 2 
+}
+
+/**
+ * Arrays
+ */
+let dados: string[]  = ["Fulano", "Ciclano", "Beltrano"];
+let dados2: Array<string> = ["Fulano", "Ciclano", "Beltrano"];
+
+let infos: (string | number)[] = ["Fulano", 2]
+
+/**
+ * Tuplas -> deve-se respeitar a ordem em que foi declarada
+ */
+let boletos: [string, number, number] = ["conta", 100, 20]
+
+/**
+ * Arrays métodos
+ */
+
+dados.map(dados => console.log(dados))
+dados.filter(dados => console.log(dados))
+
+/**
+ * Datas
+ */
+let aniversario: Date = new Date('2022-12-01 05:00')
+console.log(aniversario.toString());
