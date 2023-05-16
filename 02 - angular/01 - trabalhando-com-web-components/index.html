@@ -7,18 +7,23 @@
   <title>Portal de notícias Galaticas</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./src/Components/CardNews.js" defer></script>
-  <script src="./src/Components/TituloDinamico.js" defer></script>
+  <script src="./src/Components/TituloDinamico.js"></script>
 </head>
 <body>
   <div class="container">
-    <card-news 
-      autor="Fabio Flauzino"
-      title="Darth Vader Contrata Devs"
-      content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
-      link-url="www.google.com"
-      src-img="https://images.pexels.com/photos/9482193/pexels-photo-9482193.jpeg?auto=compress&cs=tinysrgb&w=400&h=450&dpr=1"
-    >
-    </card-news>
+    <div class="card">
+      <div class="card__left">
+        <span>by Fabio Flauzino</span>
+        <h1>Darth Vader Contrata Devs</h1>
+        <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes.</p>
+      </div>
+      <div class="card__right">
+        <img src="https://images.pexels.com/photos/9482193/pexels-photo-9482193.jpeg?auto=compress&cs=tinysrgb&w=400&h=450&dpr=1" alt="Imagem">
+      </div>
+    </div>
   </div>
+
+  <card-news></card-news>
+  <titulo-dinamico></titulo-dinamico>
 </body>
 </html>
