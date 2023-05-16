@@ -55,6 +55,7 @@ let boletos: [string, number, number] = ["conta", 100, 20]
 dados.map(dados => console.log(dados))
 dados.filter(dados => console.log(dados))
 
+
 /**
  * Datas
  */
