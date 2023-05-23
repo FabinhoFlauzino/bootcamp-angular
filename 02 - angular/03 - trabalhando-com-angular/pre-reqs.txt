@@ -1,0 +1,26 @@
+# Requisitos
+
+- Node e NPM
+
+- VS Code extensões (opcional)
+  - Angular Language Service
+  - Auto Close Tag
+  - Auto Rename Tag
+  - editorConfig, Prettier, esLint
+
+- Angular
+ - npm install -g @angular/cli@14.1.2 
+ - ng new [life-cycle]  -> cria um novo projeto
+ - ng serve             -> roda o projeto
+
+ gerar component
+ ng generate component title ou ng g c [nome]
+
+
+caso de erro na instalação
+Desinstale a ferramenta Get-ExecutionPolicy -List
+npm uninstall -g @angular/cli
+npm cache clean --force
+npm cache verify
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Limpeza https://bobbyhadz.com/blog/ng-cannot-be-loaded-running-scripts-disabled
